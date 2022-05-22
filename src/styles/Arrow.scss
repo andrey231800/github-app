@@ -1,0 +1,31 @@
+.arrow {
+  width: 7px;
+  height: 7px;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-right: #808080 solid 3px;
+    border-top: #808080 solid 3px;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0;
+  }
+
+
+  &:hover:before {
+    border-color: #0064EB;
+  }
+
+}
+
+.right {
+  transform: rotate(45deg);
+  margin-left: 9px;
+}
+
+.prev {
+  transform: rotate(-135deg);
+  margin-right: 9px;
+}

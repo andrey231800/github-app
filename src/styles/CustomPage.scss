@@ -1,0 +1,22 @@
+.customPage {
+  text-align: center;
+  .logo{
+    margin: 0 auto;
+    height: 64px;
+    width: 64px;
+    display: block;
+    margin-top: 220px;
+    @media (max-width: 820px) {
+      margin-top: 150px;
+    }
+  }
+  .text {
+    line-height: 31px;
+    width: 243px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 22px;
+    color: #808080;
+    margin-top: 47px;
+  }
+}

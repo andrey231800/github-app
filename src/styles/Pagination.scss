@@ -1,0 +1,85 @@
+.pageList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 56px;
+
+  .page {
+    width: 20px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #808080;
+  }
+
+  .page + .page {
+    margin-left: 10px;
+  }
+
+  .activePage {
+    background-color: #0064EB;
+    color: #fff;
+  }
+
+  .paginateButton {
+    width: 10px;
+    height: 10px;
+    margin: 0px 25px;
+    cursor: pointer;
+    background-color: teal;
+  }
+
+  .right {
+    background-color: red;
+  }
+}
+
+.pagination-containter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 26px;
+  @media(max-width: 830px) {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .currentRepos {
+    font-size: 14px;
+    color: #808080;
+    margin-right: 23px;
+    font-weight: 400;
+    @media(max-width: 820px) {
+      margin: 0;
+    }
+  }
+  .pagination {
+    display: flex;
+    color: #808080;
+    font-size: 14px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    @media(max-width: 820px) {
+      margin: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+    li {
+      cursor: pointer;
+      list-style-type: none;
+      .page-num {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+      .active {
+        background-color: #0064EB;
+        padding: 8px 9px;
+        color: #FFF;
+        border-radius: 3px;
+      }
+    }
+  }
+}
